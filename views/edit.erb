@@ -1,0 +1,9 @@
+<h3>Edit Picture</h3>
+
+<form action="/pictures/<%= @picture.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+    <input value="<%= @picture.author %>" type= "text" name= "picture[author]" placeholder="Author">
+    <input value="<%= @picture.photo_url %>" type= "text" name= "picture[photo_url]" placeholder="Photo Url">
+    <input value="<%= @picture.date_taken %>" type= "text" name= "picture[date_taken]" placeholder="Date Taken">
+  <input type="submit" value="Update">
+</form>

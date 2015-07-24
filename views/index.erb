@@ -1,0 +1,10 @@
+<ul>
+  <% @pictures.each do |picture| %>
+    <li>
+      <a href='/pictures/<%= picture.id %>'>
+      <%= picture.author %>
+    </a>
+    </li>
+    <% end %>
+    <li><a href="/pictures/new">Create New Picture</a></li>
+</ul>
