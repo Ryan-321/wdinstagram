@@ -1,7 +1,7 @@
 <h2><%= @picture.author %></h2>
 <img src="<%= @picture.photo_url %>" alt="<%= @picture.author %>">
 <p><%= @picture.date_taken %></p>
-
+<a href="/pictures">All Pictures</a>
 <a href="/pictures/<%= @picture.id %>/edit">Edit Picture</a>
 <form method="post" action="/pictures/<%= @picture.id %>">
   <input name="_method" value="delete" type="hidden">
